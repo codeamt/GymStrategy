@@ -6,6 +6,7 @@ import { TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap';
 import { VictoryLine, VictoryChart, VictoryTheme } from 'victory';
 import { Player } from 'video-react';
 import classnames from 'classnames';
+import { Link } from 'react-router-dom';
 
 class SandboxTabs extends Component {
   constructor(props) {
@@ -34,25 +35,22 @@ class SandboxTabs extends Component {
               ENV Info
             </NavLink>
           </NavItem>
-
           <NavItem>
             <NavLink
               className={classnames({ active: this.state.activeTab === '2' })}
               onClick={() => { this.toggle('2'); }}
             >
-              Action Space
+              Observation Space
             </NavLink>
           </NavItem>
-
           <NavItem>
             <NavLink
               className={classnames({ active: this.state.activeTab === '3' })}
               onClick={() => { this.toggle('3'); }}
             >
-              Observation Space
+              Action Space
             </NavLink>
           </NavItem>
-
           <NavItem>
             <NavLink
               className={classnames({ active: this.state.activeTab === '4' })}
@@ -67,7 +65,7 @@ class SandboxTabs extends Component {
               className={classnames({ active: this.state.activeTab === '5' })}
               onClick={() => { this.toggle('5'); }}
             >
-              Uploads
+              Storage
             </NavLink>
           </NavItem>
 
@@ -88,23 +86,27 @@ class SandboxTabs extends Component {
                   <tbody>
                     <tr>
                       <th scope="row">Owner Id</th>
-                      <td>Some Value</td>
+                      <td>blockstack_user.id</td>
                     </tr>
                     <tr>
-                      <th scope="row">Environment Id</th>
-                      <td>Some Value</td>
+                      <th scope="row">Environment</th>
+                      <td>MountainCar-v0</td>
                     </tr>
                     <tr>
-                      <th scope="row">Environment Name</th>
-                      <td>Some Value</td>
+                      <th scope="row">Category</th>
+                      <td>Classic Control</td>
                     </tr>
                     <tr>
-                      <th scope="row">Environment Name</th>
-                      <td>Some Value</td>
+                      <th scope="row">Reward Unit</th>
+                      <td>1/step</td>
                     </tr>
                     <tr>
-                      <th scope="row">Render Modes</th>
-                      <td>Some Value</td>
+                      <th scope="row">Episode Length</th>
+                      <td>200 Steps</td>
+                    </tr>
+                     <tr>
+                      <th scope="row">State Initialization</th>
+                      <td>Random</td>
                     </tr>
                   </tbody>
                 </Table>
@@ -130,23 +132,27 @@ class SandboxTabs extends Component {
                   <tbody>
                     <tr>
                       <th scope="row">Class</th>
-                      <td>Some Value</td>
+                      <td>Box</td>
                     </tr>
                     <tr>
                       <th scope="row">Size</th>
-                      <td>Some Value</td>
+                      <td>4</td>
                     </tr>
                     <tr>
                       <th scope="row">Shape</th>
-                      <td>Some Value</td>
+                      <td>(4,1)</td>
                     </tr>
                     <tr>
                       <th scope="row">Low</th>
-                      <td>Some Value</td>
+                      <td>[-4.8, -Inf, -24 deg, -Inf]</td>
                     </tr>
                     <tr>
                       <th scope="row">High</th>
-                      <td>Some Value</td>
+                      <td>[4.8, Inf, 24 deg, Inf]</td>
+                    </tr>
+                     <tr>
+                      <th scope="row">State Initialization</th>
+                      <td>Random</td>
                     </tr>
                   </tbody>
                 </Table>
@@ -155,7 +161,7 @@ class SandboxTabs extends Component {
                 <Card body style={{marginTop: '3em', paddingLeft: '4em'}}>
                   <InputGroup className="mb-6" style={{display: 'inline'}}>
                     <FormControl
-                      placeholder="Search Space for Specific Action..."
+                      placeholder="Search Space for Specific Observation Property..."
                       aria-label="Recipient's username"
                       aria-describedby="basic-addon2"
                       style={{display: 'inline', width: '55%', height: '47px'}}
@@ -182,24 +188,26 @@ class SandboxTabs extends Component {
                   <tbody>
                     <tr>
                       <th scope="row">Class</th>
-                      <td>Some Value</td>
+                      <td>Discrete</td>
                     </tr>
                     <tr>
                       <th scope="row">Size</th>
-                      <td>Some Value</td>
+                      <td>2</td>
                     </tr>
                     <tr>
                       <th scope="row">Shape</th>
-                      <td>Some Value</td>
+                      <td>(2,1)</td>
                     </tr>
                     <tr>
-                      <th scope="row">Low</th>
-                      <td>Some Value</td>
+                      <th scope="row">Actions</th>
+                      <td>[Left, Right]</td>
                     </tr>
                     <tr>
-                      <th scope="row">High</th>
-                      <td>Some Value</td>
+                      <th scope="row">Keys</th>
+                      <td>0 : Left, 1 : Right</td>
                     </tr>
+                    <br/>
+                    <br/>
                   </tbody>
                 </Table>
               </Col>
@@ -233,30 +241,32 @@ class SandboxTabs extends Component {
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">Class</th>
-                      <td>Some Value</td>
+                      <th scope="row">8/26/2019</th>
+                      <td>fgjhr72a_run_01.mp4</td>
                     </tr>
                     <tr>
-                      <th scope="row">Size</th>
-                      <td>Some Value</td>
+                      <th scope="row">8/26/2019</th>
+                      <td>fgjhr72a_run_02.mp4</td>
                     </tr>
                     <tr>
-                      <th scope="row">Shape</th>
-                      <td>Some Value</td>
+                      <th scope="row">8/26/2019</th>
+                      <td>fgjhr72a_run_03.mp4</td>
                     </tr>
                     <tr>
-                      <th scope="row">Low</th>
-                      <td>Some Value</td>
+                      <th scope="row">8/28/2019</th>
+                      <td>fgjhr72a_run_04.mp4</td>
                     </tr>
                     <tr>
-                      <th scope="row">High</th>
-                      <td>Some Value</td>
+                      <th scope="row">8/29/2019</th>
+                      <td>fgjhr72a_run_05.mp4</td>
                     </tr>
                   </tbody>
                 </Table>
+                <br/>
+                <br/>
               </Col>
-              <Col sm="6" style={{marginTop: '-2%'}}>
-                <Card body style={{paddingLeft: '4em'}}>
+              <Col sm="6" style={{marginTop: '1%'}}>
+                <Card body style={{paddingLeft: '4em', marginLeft: "10em"}}>
                   <Player style={{height: "200px"}}>
                     <source src="#" />
                   </Player>
@@ -277,27 +287,29 @@ class SandboxTabs extends Component {
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">Class</th>
-                      <td>Some Value</td>
+                      <th scope="row">8/29/2019</th>
+                      <td><Link to="/envs/fgjhr72a/sandbox">fgjhr72a_run01_report.pdf</Link></td>
                     </tr>
                     <tr>
-                      <th scope="row">Size</th>
-                      <td>Some Value</td>
+                      <th scope="row">-</th>
+                      <td>-</td>
                     </tr>
                     <tr>
-                      <th scope="row">Shape</th>
-                      <td>Some Value</td>
+                      <th scope="row">-</th>
+                      <td>-</td>
                     </tr>
                     <tr>
                       <th scope="row">Low</th>
-                      <td>Some Value</td>
+                      <td>-</td>
                     </tr>
                     <tr>
                       <th scope="row">High</th>
-                      <td>Some Value</td>
+                      <td>-</td>
                     </tr>
                   </tbody>
                 </Table>
+                <br/>
+                <br/>
               </Col>
               <Col sm="6" style={{padding: '2em'}}>
                 <Card body style={{marginTop: '3em', paddingLeft: '4em'}}>

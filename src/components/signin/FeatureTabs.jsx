@@ -62,7 +62,13 @@ class FeatureTabs extends Component {
                   <img className="img-left" src="https://s3.amazonaws.com/onename/avatar-placeholder.png" alt="pic" />
               </Col>
               <Col sm="4" style={{padding: '2em'}}>
-                <p>Cardinals, in the family Cardinalidae, are passerine birds found in North and South America. They are also known as cardinal-grosbeaks and cardinal-buntings. The South American cardinals in the genus Paroaria are placed in another family, the Thraupidae (previously placed in Emberizidae).</p>
+                <ul>
+                <li> Classic Control </li>
+                <li> Box2D </li>
+                <li> Algorithmic </li>
+                <li> Mujoco (Coming Soon) </li>
+                <li> Multi-Agent (Coming Soon) </li>
+                </ul>
               </Col>
             </Row>
           </TabPane>
@@ -73,7 +79,12 @@ class FeatureTabs extends Component {
                 <img className="img-left" src="https://s3.amazonaws.com/onename/avatar-placeholder.png" alt="pic" />
               </Col>
               <Col sm="4" style={{padding: '2em'}}>
-                <p>The tufted titmouse (Baeolophus bicolor) is a small songbird from North America, a species in the tit and chickadee family (Paridae). The black-crested titmouse, found from central and southern Texas southwards, was included as a subspecies but is now considered a separate species B. atricristatus.</p>
+                <ul>
+                  <li> Space Search Terminal UI</li>
+                  <li> Accelerated Runtime</li>
+                  <li> Gym Monitor/Video Playback </li>
+                  <li> In-app Script Editor</li>
+                </ul>
               </Col>
             </Row>
           </TabPane>
@@ -84,7 +95,11 @@ class FeatureTabs extends Component {
                 <img className="img-left" src="https://s3.amazonaws.com/onename/avatar-placeholder.png" alt="pic" />
               </Col>
               <Col sm="4" style={{padding: '2em'}}>
-                <p>The bluebirds are a group of medium-sized, mostly insectivorous or omnivorous bird in the order of Passerines in the genus Sialia of the thrush family (Turdidae). Bluebirds are one of the few thrush genera in the Americas</p>
+                <ul>
+                <li>Generate Training Reports</li>
+                <li>Read from/Write to Gaia Storage </li>
+                <li>Mobile Monitoring (Coming Soon)</li>
+                </ul>
               </Col>
             </Row>
           </TabPane>

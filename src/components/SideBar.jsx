@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import { slide as Menu} from 'react-burger-menu';
 
 
@@ -8,9 +8,9 @@ class SideBar extends Component {
     return (
       <Menu>
        <Link to="/">Home</Link>
-       <Link to="/:blockstack_id/library">Library</Link>
-       <Link to="/:blockstack_id/profile">Your Sandboxes</Link>
-       <Link to="/:blockstack_id/profile">Your Profile</Link>
+       <Link to="/library">Library</Link>
+       <Link to="/:blockstack_id/profile">Sandboxes</Link>
+       <Link to="/:blockstack_id/profile">Profile</Link>
        <Link to="/:blockstack_id/profile">Sign Out</Link>
       </Menu>
     );

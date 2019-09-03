@@ -47,7 +47,7 @@ class SandboxTerminal extends Component {
               showmsg: 'shows a message',
               alert: 'alert', popup: 'alert'
               }}
-              msg='Press a button above snd your ENV will output in this terminal.'
+              msg='Top Reward Score: 195 over 100 episodes.'
             />
           </div>
         </Col>

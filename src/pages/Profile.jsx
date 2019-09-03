@@ -34,6 +34,9 @@ export default class Profile extends Component {
       <section id="quick-links" style={{width: "100%"}}>
         <Row style={{margin: "0 auto"}}>
          <Col sm="6" id="new-project" style={{margin: "0 auto"}}>
+         <br/>
+          <h2 style={{textAlign: "center"}}>Your Profile</h2>
+          <br />
           <Card body>
               <Image src={avatarFallbackImage} roundedCircle /><br /><br/>
               <ListGroup>

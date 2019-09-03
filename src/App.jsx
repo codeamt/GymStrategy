@@ -17,6 +17,7 @@ import Home from './pages/Home.jsx';
 import Profile from './pages/Profile.jsx';
 import GymLibrary from './pages/GymLibrary.jsx';
 import GymSandbox from './pages/GymSandbox.jsx';
+import TrainingReport from './pages/TrainingReport.jsx';
 
 import {
   UserSession,
@@ -62,8 +63,9 @@ export default class App extends Component {
             <Switch>
              <Route exact path="/" render={(props) => <Home {...props} userSession={userSession} handleSignOut={ this.handleSignOut } />}  />
              <Route path="/:blockstack_id/profile" render={(props) => <Profile {...props} userSession={userSession} handleSignOut={ this.handleSignOut } />}  />
-             <Route path="/:blockstack_id/library" render={(props) => <GymLibrary {...props} userSession={userSession} handleSignOut={ this.handleSignOut } />}  />
-             <Route path="/:blockstack_id/envs/:instance_id/sandbox" render={(props) => <GymSandbox {...props} userSession={userSession} handleSignOut={ this.handleSignOut } />}  />
+             <Route exact path="/library" render={(props) => <GymLibrary {...props} userSession={userSession} handleSignOut={ this.handleSignOut } />}  />
+             <Route exact path="/envs/fgjhr72a/sandbox" render={(props) => <GymSandbox {...props} userSession={userSession} handleSignOut={ this.handleSignOut } />}  />
+             <Route exact path="/envs/fgjhr72a/report/1" render={(props) => <TrainingReport {...props} userSession={userSession} handleSignOut={ this.handleSignOut } />}  />
             </Switch>
           </div>
           <Footer />
