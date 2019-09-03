@@ -55,6 +55,7 @@
     "react-dev-utils": "^9.0.3",
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.0.1",
+    "react-simple-flex-grid": "^1.2.3",
     "react-tiny-tabs": "^0.1.2",
     "react-vertical-timeline-component": "^2.4.0",
     "reactstrap": "^8.0.1",

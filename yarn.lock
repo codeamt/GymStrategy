@@ -8136,6 +8136,13 @@ react-router@5.0.1:
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
 
+react-simple-flex-grid@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/react-simple-flex-grid/-/react-simple-flex-grid-1.2.3.tgz#97fe39af7382081e5bfff62194f5b108bbbaeda4"
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.6.0"
+
 react-tiny-tabs@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/react-tiny-tabs/-/react-tiny-tabs-0.1.2.tgz#45ee63071c07857700eab7dcb07216863bc3a2fb"
