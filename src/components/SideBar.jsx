@@ -7,7 +7,7 @@ class SideBar extends Component {
   render() {
     return (
       <Menu>
-       <Link to="/:blockstack_id/home">Home</Link>
+       <Link to="/">Home</Link>
        <Link to="/:blockstack_id/library">Library</Link>
        <Link to="/:blockstack_id/profile">Your Sandboxes</Link>
        <Link to="/:blockstack_id/profile">Your Profile</Link>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Tabs, Nav, Content} from 'react-tiny-tabs';
 import FeatureTabs from '../components/signin/FeatureTabs.jsx'
+import Footer from '../components/Footer.jsx'
 
 import {
   Person,
@@ -23,8 +24,9 @@ export default class Signin extends Component {
     const { handleSignIn } = this.props;
 
     return (
-      <div id="intro"  style={{marginTop: '3em !important'}}>
-      <div className="panel-landing" id="section-1" style={{top: '3em'}}>
+      <div id="intro">
+      <br /> <br />
+      <div className="panel-landing" id="section-1" style={{marginTop: '8em'}}>
         <h1> </h1>
         <h1 className="landing-heading">Deep Reinforcement Learning in the Cloud.</h1>
 
@@ -43,14 +45,7 @@ export default class Signin extends Component {
       <section>
        <FeatureTabs />
       </section>
-      <section className="footer">
-      <div>
-        <div className="row">
-          <div className="col-sm-4">© 2019 AnnMargaret Tutu</div>
-          <div className="col-sm-8"><a href="#"><span>GitHub</span></a> | <a href="#"><span>Docs</span></a></div>
-        </div>
-      </div>
-      </section>
+      <Footer />
       </div>
     );
   }

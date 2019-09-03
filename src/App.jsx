@@ -49,8 +49,7 @@ export default class App extends Component {
           <div style={{height: "100vh"}}>
           <div id="main">
           <TopNav />
-          <SideBar />
-          <GymSandbox userSession={userSession} handleSignIn={ this.handleSignIn } />
+          <Signin userSession={userSession} handleSignIn={ this.handleSignIn } />
           <Footer />
           </div>
           <Footer />
@@ -61,10 +60,10 @@ export default class App extends Component {
           <TopNav />
           <SideBar />
             <Switch>
-             <Route exact path="/:blockstack_id/home" render={(props) => <Home {...props} userSession={userSession} handleSignOut={ this.handleSignOut } />}  />
-             <Route exact path="/:blockstack_id/profile" render={(props) => <Profile {...props} userSession={userSession} handleSignOut={ this.handleSignOut } />}  />
-             <Route exact path="/:blockstack_id/library" render={(props) => <GymLibrary {...props} userSession={userSession} handleSignOut={ this.handleSignOut } />}  />
-             <Route exact path="/:blockstack_id/envs/:instance_id/sandbox" render={(props) => <GymSandbox {...props} userSession={userSession} handleSignOut={ this.handleSignOut } />}  />
+             <Route exact path="/" render={(props) => <Home {...props} userSession={userSession} handleSignOut={ this.handleSignOut } />}  />
+             <Route path="/:blockstack_id/profile" render={(props) => <Profile {...props} userSession={userSession} handleSignOut={ this.handleSignOut } />}  />
+             <Route path="/:blockstack_id/library" render={(props) => <GymLibrary {...props} userSession={userSession} handleSignOut={ this.handleSignOut } />}  />
+             <Route path="/:blockstack_id/envs/:instance_id/sandbox" render={(props) => <GymSandbox {...props} userSession={userSession} handleSignOut={ this.handleSignOut } />}  />
             </Switch>
           </div>
           <Footer />
