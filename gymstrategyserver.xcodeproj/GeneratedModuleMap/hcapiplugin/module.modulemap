@@ -1,0 +1,4 @@
+module hcapiplugin {
+    umbrella "/Users/AnnMargaret/Documents/gym-strategy_v1/gymstrategyserver/.build/checkouts/omr-agentcore/src/hcapiplugin/include"
+    export *
+}
