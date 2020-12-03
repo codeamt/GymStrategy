@@ -1,0 +1,3 @@
+.build/							usr/src/gymstrategyserver
+terraform/scripts/install.sh	usr/src/gymstrategyserver
+terraform/scripts/start.sh		usr/src/gymstrategyserver

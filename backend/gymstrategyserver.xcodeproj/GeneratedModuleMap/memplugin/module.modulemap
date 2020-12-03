@@ -1,0 +1,4 @@
+module memplugin {
+    umbrella "/Users/AnnMargaret/Documents/gym-strategy_v1/gymstrategyserver/.build/checkouts/omr-agentcore/src/memplugin/include"
+    export *
+}

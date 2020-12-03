@@ -1,0 +1,26 @@
+{
+  "appName": "gymstrategyserver",
+  "appType": "scaffold",
+  "appDir": ".",
+  "docker": true,
+  "bluemix": {
+    "name": "gymstrategyserver",
+    "server": {
+      "host": "not-used",
+      "domain": "not-used.net",
+      "name": "gymstrategyserver",
+      "instances": 1,
+      "memory": "128M",
+      "diskQuota": "512M",
+      "env": {}
+    },
+    "userId": "UNAUTHENTICATED_ID",
+    "backendPlatform": "SWIFT"
+  },
+  "metrics": true,
+  "repoType": "clone",
+  "healthcheck": true,
+  "starterOptions": {
+    "downloadURL": "https://us-south.devx.cloud.ibm.com/scaffolder/api/cache/728e1358-ba09-34c8-864b-c2f6cd7cc039"
+  }
+}
